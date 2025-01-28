@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <section class="sectores" id="Telcos">
@@ -67,14 +68,34 @@
             
         </section>
     
-        <section class="contenedor-imagenes">
-            <div class="imagen-placeholder">img</div>
-            <div class="imagen-placeholder"></div>
-            <div class="imagen-placeholder"></div>
-        </section>
-        
+        <section class="contenedor-imagenes swiper">
+            <div class="swiper-wrapper">
+              <div class="imagen-placeholder swiper-slide">
+                <img src="img/gab1-2.png" alt="Imagen 1">
+                <p>Título 1</p>
+              </div>
+              <div class="imagen-placeholder swiper-slide">
+                <img src="img/gab1-2.png" alt="Imagen 2">
+                <p>Título 2</p>
+              </div>
+              <div class="imagen-placeholder swiper-slide">
+                <img src="img/gab1-2.png" alt="Imagen 3">
+                <p>Título 3</p>
+              </div>
+              <div class="imagen-placeholder swiper-slide">
+                <img src="img/gab1-2.png" alt="Imagen 4">
+                <p>Título 4</p>
+              </div>
+            </div>
+            
+            <div class="swiper-pagination" ></div><br>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </section>
         <section class="linea-final"></section>
 
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
