@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+    --Titulo: #f95609;
+    --Subtitulo: #1860EF;
+    --dark-color: #000000;
+    --bntColor:#ffffff;
+  }
+
+body {
+    font-family: 'Menda Black', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bntColor);
+    color: var(--dark-color);
+    
+}
+
+
+.sectores {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulo {
+    font-family: 'Menda Black', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--Titulo);
+    text-transform: uppercase;
+}
+
+.descripcion {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 10px auto 40px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--dark-color);
+}
+
+.sector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.imagen {
+    width: 500px;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.contenido {
+    padding: 20px;
+    max-width: 500px;
+}
+
+.subtitulo {
+    font-family: 'Menda Black', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--Subtitulo);
+    text-transform: uppercase;
+    font-weight: 900; 
+}
+
+.texto {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: var(--dark-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--dark-color);
+    border: 2px solid var(--bntColor); 
+    transform: skewX(-10deg); 
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 180px;
+}
+
+.button:hover {
+    background-color: var(--bntColor);
+    color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .sector {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+}
+/*Mas informacion*/
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: 30px; /* Espacio entre el título y las imágenes */
+    padding: 10px
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--Titulo); /* Color similar al que usaste */
+}
+
+.description {
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el texto */
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*Segunda seccion*/
+/* Contenedor de beneficios */
+.contenedor-beneficios {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 20px;
+}
+/* Línea final */
+.linea-final {
+    width: 80%;
+    height: 3px;
+    background-color: var(--dark-color);
+    margin: 20px auto;
+}
+
+/* Cada beneficio */
+.contenedor-beneficios {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Reduce el espacio entre elementos */
+}
+
+.beneficio {
+    width: 350px; /* Reduce un poco el tamaño */
+    height: 250px; /* Ajuste dinámico */
+    padding: 20px;
+    background-color: #efefef;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Iconos */
+/* Iconos */
+.beneficio-icono img{
+    width: 50px;
+    height: 50px;
+ }
+/* Títulos */
+.beneficio-titulo {
+    padding: 2px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-top: 10px;
+}
+
+/* Texto */
+.beneficio-texto {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Contenedor de imágenes */
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Reduce el espacio entre elementos */
+}
+
+.carousel-inner img {
+    max-height: 500px; /* Ajusta la altura máxima de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes cubran completamente el contenedor */
+}
+
+.imagen-placeholder {
+    background-color: #d3d3d3;
+    width: 350px; /* Reduce un poco el tamaño */
+    height: 250px; /* Ajuste dinámico */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
