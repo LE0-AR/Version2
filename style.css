@@ -161,7 +161,7 @@ body {
   max-width: 1000px;
   margin: 0 auto; /* Centra el texto */
   font-size: 16px;
-  color: #333;
+  color: var(--dark-color);
   text-align: justify;
   line-height: 1.5;
   font-family: 'Franklin Gothic', sans-serif;
@@ -195,8 +195,8 @@ body {
 }
 
 .beneficio {
-  width: 350px; /* Reduce un poco el tamaño */
-  height: 300px; /* Ajuste dinámico */
+  width: 300px; /* Reduce un poco el tamaño */
+  height: 350px; /* Ajuste dinámico */
   padding: 20px;
   background-color: #efefef;
   border-radius: 8px;
@@ -217,7 +217,7 @@ body {
 }
 /* Títulos */
 .beneficio-titulo {
-  padding:  25px;
+  padding:  10px;
   font-size: 24px;
   font-weight: bold;
   color: #ff6600;
@@ -225,10 +225,12 @@ body {
 }
 
 /* Texto */
+/* Texto */
 .beneficio-texto {
   font-size: 16px;
-  color: #333;
-  margin-top: 10px;
+  color: #000000;
+  text-align: justify;
+  padding: 20px;
   font-family: 'Franklin Gothic', sans-serif;
 }
 
