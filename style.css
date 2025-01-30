@@ -1,17 +1,21 @@
 @font-face {
-  font-family: 'Menda Black';
-  src: url('fuente/menda-black.otf') format('opentype');
+  font-family: 'khand Bold';
+  src: url('fuente/khand-bold.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Franklin Gothic';
-  src: url('fuente/franklin-gothic-book-regular.otf') format('opentype');
+  font-family: 'Libre Franklin';
+  src: url('fuente/libre-franklin-regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Libre Franklin Bold';
+  src: url('fuente/libre-franklin.bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --Titulo: #f95609;
   --Subtitulo: #1860ef;
@@ -22,8 +26,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bntColor);
-  color: var(--dark-color);
 }
 
 .sectores {
@@ -33,7 +35,7 @@ body {
 
 .titulo {
 
-  font-family: 'Menda Black', sans-serif;
+  font-family: 'khand Bold', sans-serif;
 
   font-size: 48px;
   color: var(--Titulo);
@@ -41,7 +43,7 @@ body {
 }
 
 .descripcion {
-  font-family: 'Franklin Gothic', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
   max-width: 900px;
   margin: 10px auto 40px;
@@ -72,8 +74,8 @@ body {
 }
 
 .subtitulo {
-  font-family: "Menda Black", sans-serif;
-  font-size: 30px;
+  font-family: 'khand Bold', sans-serif;
+  font-size: 40px;
   color: var(--Subtitulo);
   text-transform: uppercase;
 }
@@ -84,14 +86,14 @@ body {
   margin-bottom: 16px;
   text-align: justify;
   color: var(--dark-color);
-  font-family: 'Franklin Gothic', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .button {
   display: inline-block;
   padding: 10px 30px;
   font-size: 16px;
-  font-weight: bold;
+  font-family: 'Libre Franklin';
   color: white;
   background-color: var(--dark-color);
   border: 2px solid var(--bntColor);
@@ -112,20 +114,24 @@ body {
 .Media {
   display: inline-block;
   padding: 10px 30px;
-  font-size: 24px;
   text-transform: uppercase;
-  font-family: "Menda Black", sans-serif;
-  color: var(--dark-color);
   background-color: var(--Titulo);
   transform: skewX(-15deg);
-  text-align:center;
-  text-decoration: none;
-  margin-left: -60%;
+  margin-left: -50%;
   margin-top: 80px;
   width: 50%;
   height: 30px;
 }
-
+.Media p{
+  font-size: 36px;
+  font-family: 'khand Bold', sans-serif;
+  text-align:center;
+  text-decoration: none;
+  transform: skewX(15deg);
+  color: var(--dark-color);
+  margin-top: -10px;
+  top: 0;
+}
 /* Diseño responsivo */
 @media (max-width: 768px) {
   .sector {
@@ -147,12 +153,13 @@ body {
   text-align: center;
   margin-bottom: 30px; /* Espacio entre el título y las imágenes */
   padding: 20px;
+  margin-top: 50px;
 }
 
 .title {
   font-size: 24px;
   color: var(--Titulo); /* Color similar al que usaste */
-  font-family: 'Menda Black', sans-serif;
+  font-family: 'khand Bold', sans-serif;
   text-align:inherit;
   margin-left: -28%;
 }
@@ -164,7 +171,7 @@ body {
   color: var(--dark-color);
   text-align: justify;
   line-height: 1.5;
-  font-family: 'Franklin Gothic', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 /*Segunda seccion*/
@@ -221,7 +228,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #ff6600;
-  font-family: 'Menda Black', sans-serif;
+  font-family: 'khand Bold', sans-serif;
 }
 
 /* Texto */
@@ -231,14 +238,14 @@ body {
   color: #000000;
   text-align: justify;
   padding: 20px;
-  font-family: 'Franklin Gothic', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 /*Nuevo*/
 
 .contenedor-imagenes {
     overflow: hidden;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     margin-top: 80px;
@@ -271,11 +278,13 @@ body {
   
   .imagen-placeholder p {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 32px;
     color: var(--dark-color);
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Libre Franklin Bold', sans-serif;
+
   }
   
   .swiper-pagination-bullet {

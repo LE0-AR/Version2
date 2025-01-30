@@ -12,8 +12,8 @@ const swiper = new Swiper('.contenedor-imagenes', {
     },
     breakpoints: {
         0: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 }
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
     },
     on: {
         slideChange: function () {
