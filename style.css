@@ -157,11 +157,11 @@ body {
 }
 
 .title {
-  font-size: 24px;
+  font-size: 36px;
   color: var(--Titulo); /* Color similar al que usaste */
   font-family: 'khand Bold', sans-serif;
-  text-align:inherit;
-  margin-left: -28%;
+  text-align: start;
+  margin-left: 23%;
 }
 
 .description {
@@ -186,7 +186,7 @@ body {
 .linea-final {
   width: 80%;
   height: 3px;
-  background-color: var(--dark-color);
+  background-color: var(--Titulo);
   margin: 20px auto;
 }
 .SectoresLinea {
@@ -215,12 +215,12 @@ body {
 }
 /* Iconos */
 .beneficio-icono img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 #icon{
-  width: 60px;
-  height: 65px;
+  width: 53px;
+  height: 82.17px;
 }
 /* Títulos */
 .beneficio-titulo {
