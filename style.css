@@ -27,7 +27,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+header{
+  margin-top: 200px;
+}
 .sectores {
   text-align: center;
   padding: 40px 20px;
@@ -40,6 +42,14 @@ body {
   font-size: 48px;
   color: var(--Titulo);
   text-transform: uppercase;
+}
+
+.tld {
+
+  font-family: 'khand Bold', sans-serif;
+
+  font-size: 48px;
+  color: var(--Titulo);
 }
 
 .descripcion {
@@ -103,6 +113,27 @@ body {
   text-decoration: none;
   transition: 0.3s;
   margin-left: 180px;
+}
+
+.button:hover {
+  background-color: var(--bntColor);
+  color: var(--dark-color);
+  border: 2px solid var(--dark-color);
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-family: 'Libre Franklin';
+  color: white;
+  background-color: var(--dark-color);
+  border: 2px solid var(--bntColor);
+  transform: skewX(-10deg);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 0px;
 }
 
 .button:hover {
@@ -178,10 +209,13 @@ body {
 /* Contenedor de beneficios */
 .contenedor-beneficios {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centra los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una línea */
+  gap: 30px; /* Espacio uniforme entre los elementos */
   text-align: center;
   padding: 40px 20px;
 }
+
 /* Línea final */
 .linea-final {
   width: 80%;
@@ -189,56 +223,61 @@ body {
   background-color: var(--Titulo);
   margin: 20px auto;
 }
+
 .SectoresLinea {
   width: 80%;
   height: 50px;
   padding: 10px;
 }
-/* Cada beneficio */
-.contenedor-beneficios {
-  display: flex;
-  justify-content: center; /* Centra los elementos */
-  gap: 20px; /* Reduce el espacio entre elementos */
-}
 
+/* Cada beneficio */
 .beneficio {
-  width: 300px; /* Reduce un poco el tamaño */
+  width: 330px; /* Reduce un poco el tamaño */
   height: 350px; /* Ajuste dinámico */
   padding: 20px;
   background-color: #efefef;
   border-radius: 8px;
   text-align: center;
+  margin: 10px; /* Espacio alrededor de cada beneficio */
 }
 
 .beneficio-icono {
   padding: 15px;
 }
+
 /* Iconos */
 .beneficio-icono img {
   width: 70px;
   height: 70px;
 }
-#icon{
+
+#icon {
   width: 53px;
   height: 82.17px;
 }
+
 /* Títulos */
 .beneficio-titulo {
-  padding:  10px;
-  font-size: 24px;
+  padding: 10px;
+  font-size: 32px;
+  margin-top: 20px;
   font-weight: bold;
   color: #ff6600;
-  font-family: 'khand Bold', sans-serif;
+  font-family: 'Khand Bold', sans-serif;
+  text-transform: uppercase;
 }
 
-/* Texto */
 /* Texto */
 .beneficio-texto {
   font-size: 16px;
   color: #000000;
-  text-align: justify;
+  text-align: center;
   padding: 20px;
   font-family: 'Libre Franklin', sans-serif;
+}
+#elctr{
+  margin-top: 30px;
+  padding: 0;
 }
 
 /*Nuevo*/
